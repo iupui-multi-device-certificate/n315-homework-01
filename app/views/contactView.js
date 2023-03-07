@@ -1,8 +1,9 @@
+// * if use form, move preventDefault to form handler
+
 export const contactView = `        
   <section class="contact content-width content-padding">
-    <h1 class="section-title upper">Contact Us:</h1> 
-    
-    <form class="contact-form">
+    <h1 class="section-title upper">Contact Us:</h1>     
+    <form class="contact-form" onsubmit="event.preventDefault();">
     <input
       type="text"
       name="name"

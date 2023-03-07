@@ -9,21 +9,32 @@ const aboutContent = aboutView(aboutModel);
 const contactContent = contactView;
 
 const titleBase = "TV Blog";
+
 const changeContent = (contentID) => $("#app").html(eval(contentID));
+
+const changeRoute = () => {
+  let hashTag = window.location.hash;
+  let pageID = hashTag.replace("#", "");
+  console.log(hashTag + " " + pageID);
+  let contentID = pageID + "Content";
+  changeContent(contentID);
+  $(document).attr("title", `${titleBase} | ${pageID.toUpperCase()}`);
+};
+
 const setHome = () => {
   $("#app").html(homeContent);
-  $(document).attr("title", `${titleBase} | HOME`);
 };
 
 function initListeners() {
-  $("nav a").click(function (e) {
-    let aID = e.currentTarget.id;
+  // $("nav a").click(function (e) {
+  //   let aID = e.currentTarget.id;
+  //   $(document).attr("title", `TBD | ${aID.toUpperCase()}`);
+  //   let contentID = aID + "Content";
+  //   changeContent(contentID);
+  // });
 
-    $(document).attr("title", `TBD | ${aID.toUpperCase()}`);
-
-    let contentID = aID + "Content";
-    changeContent(contentID);
-  });
+  $(window).on("hashchange", changeRoute);
+  changeRoute();
 }
 $(document).ready(function () {
   initListeners();
