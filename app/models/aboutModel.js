@@ -5,35 +5,11 @@
 export const aboutModel = [
   {
     id: 1,
-    name: "John Doe",
-    relativeImagePath: "./images/team/john-doe.jpg",
-    summary: `<p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem
-        id, cumque aperiam tempora necessitatibus facilis earum explicabo
-        minima commodi ut dicta molestiae quis neque eveniet odit, odio
-        blanditiis impedit enim!
-      </p>`,
-  },
-  {
-    id: 2,
     name: "Jane Doe",
     relativeImagePath: "./images/team/jane-doe.jpg",
+    title: "Technologist, TV and Tiny House Afficianado",
     summary: `<p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem
-        id, cumque aperiam tempora necessitatibus facilis earum explicabo
-        minima commodi ut dicta molestiae quis neque eveniet odit, odio
-        blanditiis impedit enim!
-      </p>`,
-  },
-  {
-    id: 3,
-    name: "Zara Smith",
-    relativeImagePath: "./images/team/zara-smith.jpg",
-    summary: `<p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem
-        id, cumque aperiam tempora necessitatibus facilis earum explicabo
-        minima commodi ut dicta molestiae quis neque eveniet odit, odio
-        blanditiis impedit enim!
+       I write about technology and its impact on society. I enjoy over the air TV and delving into how televion has evolved over time. I seek to live a sustainable, minimal, environmentally-friendly lifestyle. As part of this goal, I have begun researching the tiny house lifestyle. 
       </p>`,
   },
 ];

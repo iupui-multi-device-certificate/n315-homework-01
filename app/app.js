@@ -2,7 +2,7 @@ import { homeModel, blogModel, aboutModel } from "./models/model.js";
 
 import { homeView, blogView, aboutView, contactView } from "./views/view.js";
 
-const titleBase = "TV Blog";
+const titleBase = "Turning Heads";
 
 const routes = {
   home: homeView(homeModel),

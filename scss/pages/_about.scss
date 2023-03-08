@@ -1,16 +1,7 @@
+//TODO: fix max-size
+//TODO: style h2, more space
+
 .about {
-  .intro {
-    margin-bottom: $spacing;
-    padding: $spacing;
-    margin: 0 1rem $spacing 1rem;
-    border-radius: $border-radius;
-    box-shadow: $shadow;
-
-    p {
-      margin-bottom: $spacing;
-    }
-  }
-
   .team-member-container {
     display: flex;
     align-items: center;
@@ -19,12 +10,6 @@
     margin: 0 1rem $spacing 1rem;
     border-radius: $border-radius;
     box-shadow: $shadow;
-
-    //This messes up in mobile view though and do not have time to fix
-    //even rows image on right
-    // &:nth-child(even) {
-    //   flex-direction: row-reverse;
-    // }
   }
 }
 
@@ -32,9 +17,5 @@
   .team-member-container {
     display: flex;
     flex-direction: column;
-    // //set even rows same as rest
-    // &:nth-child(even) {
-    //   flex-direction: column;
-    // }
   }
 }
