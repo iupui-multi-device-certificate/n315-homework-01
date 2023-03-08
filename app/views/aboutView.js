@@ -3,7 +3,7 @@ const renderTeamMember = (teamMember) => `
       <img src="${teamMember.relativeImagePath}" alt="${teamMember.name}" />
       <div class="team-member-body">
         <h2 class="team-member">Hi, I'm ${teamMember.name}</h2>
-        <h3>${teamMember.title}</h3>
+        <p class="title">${teamMember.title}</p>
         ${teamMember.summary}
       </div>
     </div>

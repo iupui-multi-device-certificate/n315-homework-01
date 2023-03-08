@@ -54,7 +54,7 @@ body {
 }
 
 .btn, .btn--round {
-  background-color: #ff1493;
+  background-color: #0fff50;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -113,16 +113,16 @@ body {
 }
 .navbar a {
   color: #fff;
-  text-decoration-color: #ff1493;
+  text-decoration-color: #0fff50;
   text-decoration-thickness: 2px;
   text-underline-offset: 0.5rem;
 }
 .navbar a:hover {
-  color: #ff1493;
+  color: #0fff50;
   text-decoration-color: #fff;
 }
 .navbar .logo-link {
-  color: #ff1493;
+  color: #0fff50;
   text-decoration-color: #fff;
 }
 .navbar .logo-link i {
@@ -130,7 +130,7 @@ body {
 }
 .navbar .logo-link:hover {
   color: #fff;
-  text-decoration-color: #ff1493;
+  text-decoration-color: #0fff50;
 }
 
 footer {
@@ -192,12 +192,12 @@ footer {
   transition: all 0.3s ease-out;
 }
 .home .teasers .teaser figcaption:hover, .home .teasers .teaser figcaption:focus-within {
-  border: 3px #ff1493 solid;
-  background-color: rgba(255, 20, 147, 0.1);
+  border: 3px #0fff50 solid;
+  background-color: rgba(15, 255, 80, 0.1);
 }
 .home .teasers .teaser figcaption a {
   text-decoration-color: #fff;
-  color: #ff1493;
+  color: #0fff50;
   text-decoration-thickness: 2px;
   text-underline-offset: 0.5rem;
   font-size: 1.25rem;
@@ -219,6 +219,11 @@ footer {
   box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.25);
 }
 
+@media only screen and (max-width: 992px) {
+  .teasers {
+    flex-wrap: wrap;
+  }
+}
 .blog .blogs .blog-post {
   padding: 1.25rem;
   margin: 0 1rem 1.25rem 1rem;
@@ -226,7 +231,7 @@ footer {
   box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.25);
   background-color: white;
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   gap: 1.25rem;
 }
 .blog .blogs .blog-post .blog-post-body .blog-post-title {
@@ -247,6 +252,23 @@ footer {
   margin: 0 1rem 1.25rem 1rem;
   border-radius: 0.375rem;
   box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.25);
+}
+.about .team-member-container img {
+  border-radius: 0.375rem;
+  box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.25);
+}
+.about .team-member-container .team-member-body {
+  display: flex;
+  flex-direction: column;
+}
+.about .team-member-container .team-member-body h2 {
+  margin-bottom: 1.5rem;
+  font-size: 3rem;
+}
+.about .team-member-container .team-member-body .title {
+  margin-bottom: 1.5rem;
+  font-size: 1.25rem;
+  font-weight: bold;
 }
 
 @media only screen and (max-width: 768px) {

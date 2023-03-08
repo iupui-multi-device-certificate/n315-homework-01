@@ -7,7 +7,7 @@
       box-shadow: $shadow;
       background-color: white;
       display: flex;
-      align-items: center;
+      align-items: flex-start;
       gap: $spacing;
 
       .blog-post-body {

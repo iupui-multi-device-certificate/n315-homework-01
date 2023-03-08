@@ -105,3 +105,9 @@
     box-shadow: $shadow;
   }
 }
+
+@media only screen and (max-width: $breakpoint-lg) {
+  .teasers {
+    flex-wrap: wrap;
+  }
+}

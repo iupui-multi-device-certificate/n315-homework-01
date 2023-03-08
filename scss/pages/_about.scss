@@ -1,4 +1,3 @@
-//TODO: fix max-size
 //TODO: style h2, more space
 
 .about {
@@ -10,6 +9,27 @@
     margin: 0 1rem $spacing 1rem;
     border-radius: $border-radius;
     box-shadow: $shadow;
+
+    img {
+      border-radius: $border-radius;
+      box-shadow: $shadow;
+    }
+
+    .team-member-body {
+      display: flex;
+      flex-direction: column;
+
+      h2 {
+        margin-bottom: $spacing-lg;
+        font-size: 3rem;
+      }
+
+      .title {
+        margin-bottom: $spacing-lg;
+        font-size: 1.25rem;
+        font-weight: bold;
+      }
+    }
   }
 }
 
