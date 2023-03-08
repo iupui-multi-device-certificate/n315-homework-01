@@ -10,6 +10,11 @@
       align-items: flex-start;
       gap: $spacing;
 
+      img {
+        border-radius: $border-radius;
+        box-shadow: $shadow;
+      }
+
       .blog-post-body {
         .blog-post-title {
           font-size: 1.5rem;
